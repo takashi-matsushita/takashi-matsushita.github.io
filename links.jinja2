@@ -1,0 +1,45 @@
+{% include "templates/header.jinja2" %}
+
+<!-- body: designed by TM -->
+<div id="content" dir="ltr" lang="en">
+  <span class="anchor"></span>
+  <span class="anchor"></span>
+  <span class="anchor"></span>
+
+<!-- title -->
+  <h2>Front Page</h2>
+<!-- title -->
+
+  <h6>統計 / Statistics</h6>
+  <ul>
+    <li>日本 / Japan </li>
+    <ul>
+      {% for item in loop.japanese_stat %}
+      <li> <a href="{{item.href}}">{{item.text}}</a></li>
+      {% endfor %}
+    </ul>
+
+    <li>世界 / World </li>
+    <ul>
+      {% for item in loop.world_stat %}
+      <li> <a href="{{item.href}}">{{item.text}}</a></li>
+      {% endfor %}
+    </ul>
+  </ul>
+
+
+  <h6>解析 / Analysis</h6>
+  <ul>
+    {% for item in loop.analysis %}
+    <li> <a href="{{item.href}}">{{item.text}}</a></li>
+    {% endfor %}
+  </ul>
+
+  <span class="anchor"></span>
+  <span class="anchor"></span>
+  <span class="anchor"></span>
+
+</div>
+<!-- body: end -->
+
+{% include "templates/footer.jinja2" %}

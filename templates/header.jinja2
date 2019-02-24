@@ -1,0 +1,46 @@
+{#
+ # @author: Takashi MATSUSHITA
+ #}
+{% block header scoped %}
+<!-- header: designed by TM -->
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  <title>FrontPage - TM</title>
+  <script type="text/javascript" src="{{info.base}}/js/common.js"></script>
+
+  <link rel="stylesheet" type="text/css" charset="utf-8" media="all" href="{{info.base}}/css/common.css">
+  <link rel="stylesheet" type="text/css" charset="utf-8" media="all" href="{{info.base}}/css/screen.css">
+  <link rel="Start" href="/index.html">
+</head>
+
+<!-- body: begin -->
+<body dir="ltr" lang="en">
+
+<!-- logo: begin -->
+<div id="header">
+  <div id="logo">
+    <img src="{{info.base}}/logo/bellflower.png" style="vertical-align:middle" height="60">
+    TM Web
+    <img src="{{info.base}}/logo/tea-ceremony.png" style="vertical-align:middle;float:right" height="55">
+  </div>
+</div>
+<!-- logo: end -->
+
+
+<!-- navigation: begin -->
+<div id="sidebar">
+  <div class="sidepanel">
+    <h1>Navigation</h1>
+
+    <ul id="navibar">
+    {% for item in loop.navi %}
+      <li class="wikilink">
+        <a href="{{item.href}}">{{item.text}}</a></li>
+    {% endfor %}
+    </ul>
+  </div>
+</div>
+<!-- navigation: end -->
+
+{% endblock header %}
+{# eof #}

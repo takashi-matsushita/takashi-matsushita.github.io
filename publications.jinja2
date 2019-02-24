@@ -1,0 +1,85 @@
+{% include 'templates/header.jinja2' %}
+
+<!-- body: designed by Takashi MATSUSHITA -->
+<div id="content" dir="ltr" lang="en">
+  <span class="anchor"></span>
+  <span class="anchor"></span>
+  <span class="anchor"></span>
+
+<!-- title -->
+  <h2>Publications</h2>
+<!-- title -->
+
+<h4>CMS experiment related</h4>
+<ul>
+  {% for item in loop.pub_cms %}
+  <li>
+    {{item.author}}, "{{item.title}}", {% if item.link %}<a href="{{item.link}}">{{item.ref}}</a>{% else %}{{item.ref}}{% endif %}
+  </li>
+  {% endfor %}
+</ul>
+
+
+<h4>ATLAS experiment related</h4>
+<ul>
+  {% for item in loop.pub_atlas %}
+  <li>
+    {{item.author}}, "{{item.title}}", {% if item.link %}<a href="{{item.link}}">{{item.ref}}</a>{% else %}{{item.ref}}{% endif %}
+  </li>
+  {% endfor %}
+</ul>
+
+<b> Conference notes</b>
+<ul>
+  {% for item in loop.pub_atlas_note %}
+  <li>
+    {{item.author}}, "{{item.title}}", {% if item.link %}<a href="{{item.link}}">{{item.ref}}</a>{% else %}{{item.ref}}{% endif %}
+  </li>
+  {% endfor %}
+</ul>
+
+
+<h4>MICE experiment related</h4>
+<ul>
+  {% for item in loop.pub_mice %}
+  <li>
+    {{item.author}}, "{{item.title}}", {% if item.link %}<a href="{{item.link}}">{{item.ref}}</a>{% else %}{{item.ref}}{% endif %}
+  </li>
+  {% endfor %}
+</ul>
+
+
+<h4>ZEUS experiment related</h4>
+<ul>
+  {% for item in loop.pub_zeus %}
+  <li>
+    {{item.author}}, "{{item.title}}", {% if item.link %}<a href="{{item.link}}">{{item.ref}}</a>{% else %}{{item.ref}}{% endif %}
+  </li>
+  {% endfor %}
+</ul>
+
+
+<h4>Radiation effects</h4>
+<ul>
+  {% for item in loop.pub_rad %}
+  <li>
+    {{item.author}}, "{{item.title}}", {% if item.link %}<a href="{{item.link}}">{{item.ref}}</a>{% else %}{{item.ref}}{% endif %}
+  </li>
+  {% endfor %}
+</ul>
+
+
+<h4>Books</h4>
+<ul>
+  {% for item in loop.pub_books %}
+  <li>
+    {{item.author}}, "{{item.title}}", {% if item.link %}<a href="{{item.link}}">{{item.ref}}</a>{% else %}{{item.ref}}{% endif %}
+  </li>
+  {% endfor %}
+</ul>
+
+
+</div>
+<!-- body: end -->
+
+{% include 'templates/footer.jinja2' %}

@@ -1,0 +1,112 @@
+{% include 'templates/header.jinja2' %}
+
+<!-- body: designed by Takashi MATSUSHITA -->
+<div id="content" dir="ltr" lang="en">
+  <span class="anchor"></span>
+  <span class="anchor"></span>
+  <span class="anchor"></span>
+
+<!-- title -->
+  <h2>Presentations</h2>
+<!-- title -->
+
+<h4>Talks/Posters</h4>
+  
+<b>Conferences with proceedings</b>
+<ul>
+  {% for item in loop.conf_int %}
+  <li>
+    {{item.year}}, {% if item.site %}<a href="{{item.site}}">{{item.name}}</a>{% else %}{{item.name}}{% endif %}, {{item.venue}}, "{{item.title}}" &nbsp;--&nbsp;
+    {% if item.poster %}
+      <a href="{{item.poster}}">poster</a>
+    {% endif %}
+    {% if item.slides %}
+      <a href="{{item.slides}}">slides</a>
+    {% endif %}
+    {% if item.proceedings %}
+      <a href="{{item.proceedings}}">proceedings</a>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>
+
+
+<b>Domestic Conferences (invited)</b>
+<ul>
+  {% for item in loop.conf_dom %}
+  <li>
+    {{item.year}}, {% if item.site %}<a href="{{item.site}}">{{item.name}}</a>{% else %}{{item.name}}{% endif %}, {{item.venue}}, "{{item.title}}" &nbsp;--&nbsp;
+    {% if item.poster %}
+      <a href="{{item.poster}}">poster</a>
+    {% endif %}
+    {% if item.slides %}
+      <a href="{{item.slides}}">slides</a>
+    {% endif %}
+    {% if item.proceedings %}
+      <a href="{{item.proceedings}}">proceedings</a>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>
+
+
+<b>Seminars</b>
+<ul>
+  {% for item in loop.seminar %}
+  <li>
+    {{item.year}}, {% if item.site %}<a href="{{item.site}}">{{item.name}}</a>{% else %}{{item.name}}{% endif %}, {{item.venue}}, "{{item.title}}" &nbsp;--&nbsp;
+    {% if item.poster %}
+      <a href="{{item.poster}}">poster</a>
+    {% endif %}
+    {% if item.slides %}
+      <a href="{{item.slides}}">slides</a>
+    {% endif %}
+    {% if item.proceedings %}
+      <a href="{{item.proceedings}}">proceedings</a>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>
+
+
+<b>Symposium</b>
+<ul>
+  {% for item in loop.symposium %}
+  <li>
+    {{item.year}}, {% if item.site %}<a href="{{item.site}}">{{item.name}}</a>{% else %}{{item.name}}{% endif %}, {{item.venue}}, "{{item.title}}" &nbsp;--&nbsp;
+    {% if item.poster %}
+      <a href="{{item.poster}}">poster</a>
+    {% endif %}
+    {% if item.slides %}
+      <a href="{{item.slides}}">slides</a>
+    {% endif %}
+    {% if item.proceedings %}
+      <a href="{{item.proceedings}}">proceedings</a>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>
+
+
+<b>Outreach</b>
+<ul>
+  {% for item in loop.outreach %}
+  <li>
+    {{item.year}}, {% if item.site %}<a href="{{item.site}}">{{item.name}}</a>{% else %}{{item.name}}{% endif %}, {{item.venue}}, "{{item.title}}" &nbsp;--&nbsp;
+    {% if item.poster %}
+      <a href="{{item.poster}}">poster</a>
+    {% endif %}
+    {% if item.slides %}
+      <a href="{{item.slides}}">slides</a>
+    {% endif %}
+    {% if item.proceedings %}
+      <a href="{{item.proceedings}}">proceedings</a>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>
+
+</div>
+<!-- body: end -->
+
+{% include 'templates/footer.jinja2' %}

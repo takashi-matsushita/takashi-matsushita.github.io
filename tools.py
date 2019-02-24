@@ -32,6 +32,10 @@ def getNavigation(loop=None):
     'href': "publications.html",
     'text': 'Publications'
   })
+  loop.navi.append({
+    'href': "links.html",
+    'text': 'Links'
+  })
   return loop
 
 

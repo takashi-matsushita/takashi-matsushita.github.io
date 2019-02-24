@@ -14,12 +14,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Your awesome title
-author :
-  name : Takashi MATSUSHITA
-  email: your-email@example.com
-  github : username
-  twitter : username
-  feedburner : feedname
+author : TM
+name : Takashi MATSUSHITA
+email: your-email@example.com
+github : username
+twitter : username
+feedburner : feedname
 production_url : http://takashi-matsushita.github.io/lab/jekyll
 BASE_PATH : http://takashi-matsushita.github.io/lab/jekyll
 description: >- # this means to ignore newlines until "baseurl:"

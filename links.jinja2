@@ -12,21 +12,20 @@
 
   <h6>News / ニュース</h6>
   <ul>
-    <li>Japan / ニュース</li>
-    <ul>
+    <li>Japan / 日本</li>
+    <ul style="flex-wrap:wrap;display:flex;">
       {% for item in link.news_jp %}
-      <li> <a href="{{item.href}}">{{item.text}}</a></li>
+      <li style="flex:1 0 33%;"> <a href="{{item.href}}">{{item.text}}</a></li>
       {% endfor %}
     </ul>
 
     <li>World / 世界</li>
-    <ul>
+    <ul style="flex-wrap:wrap;display:flex;">
       {% for item in link.news_en %}
-      <li> <a href="{{item.href}}">{{item.text}}</a></li>
+      <li style="flex:1 0 33%;"> <a href="{{item.href}}">{{item.text}}</a></li>
       {% endfor %}
     </ul>
   </ul>
-
 
   <span class="anchor"></span>
   <span class="anchor"></span>

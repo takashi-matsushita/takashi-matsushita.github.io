@@ -39,6 +39,37 @@ def getNavigation(loop=None):
   return loop
 
 
+def getLinks(link=None):
+  if not link: link = Object()
+
+  link.news_jp = []
+  link.news_jp.append({'text': '読売', 'href': "www.yomiuri.co.jp"})
+  link.news_jp.append({'text': '産経', 'href': "sankei.com"})
+  link.news_jp.append({'text': '日経', 'href': "www.nikkei.co.jp"})
+  link.news_jp.append({'text': '朝日', 'href': "www.asahi.com"})
+  link.news_jp.append({'text': '毎日', 'href': "mainichi.jp"})
+  link.news_jp.append({'text': 'FNN', 'href': "www.fnn.jp"})
+  link.news_jp.append({'text': '夕刊フジ', 'href': "www.zakzak.co.jp"})
+
+  link.news_en = []
+  link.news_en.append({'text': 'The Washington Post', 'href': "www.washingtonpost.com"})
+  link.news_en.append({'text': 'The New York Times', 'href': "www.nytimes.com"})
+  link.news_en.append({'text': 'The Wall Street Journal', 'href': "www.wsj.com"})
+  link.news_en.append({'text': 'The Telegraph', 'href': "www.telegraph.co.uk"})
+  link.news_en.append({'text': 'The Guardian', 'href': "www.theguardian.com"})
+  link.news_en.append({'text': 'CNN', 'href': "edition.cnn.com"})
+  link.news_en.append({'text': 'BBC', 'href': "www.bbc.com"})
+  link.news_en.append({'text': 'AlJazeera', 'href': "www.aljazeera.com"})
+  link.news_en.append({'text': 'Axios', 'href': "www.axios.com"})
+  link.news_en.append({'text': 'Signal', 'href': "www.gzeromedia.com/signal"})
+  link.news_en.append({'text': 'ProPublica', 'href': "www.propublica.org"})
+  link.news_en.append({'text': 'Project Syndicate', 'href': "www.project-syndicate.org"})
+  link.news_en.append({'text': 'bellingcat', 'href': "www.bellingcat.com"})
+  link.news_en.append({'text': 'Wiki Tribune', 'href': "www.wikitribune.com"})
+
+  return link
+
+
 def getConferences(loop=None):
   if not loop: loop = Object()
   loop.conf_int = []

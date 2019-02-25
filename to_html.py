@@ -9,6 +9,7 @@ info = tools.getInformation()
 loop = tools.getNavigation()
 loop = tools.getConferences(loop)
 loop = tools.getPublications(loop)
+link = tools.getLinks()
 
 
 THIS_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -22,6 +23,7 @@ def render(template):
   association = {
     "info": info,
     "loop": loop,
+    "link": link,
   }
 
   return j2_env.get_template(template).render(association)

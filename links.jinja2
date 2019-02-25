@@ -10,30 +10,23 @@
   <h2>Links</h2>
 <!-- title -->
 
-  <h6>統計 / Statistics</h6>
+  <h6>News / ニュース</h6>
   <ul>
-    <li>日本 / Japan </li>
+    <li>Japan / ニュース</li>
     <ul>
-      {% for item in loop.japanese_stat %}
+      {% for item in link.news_jp %}
       <li> <a href="{{item.href}}">{{item.text}}</a></li>
       {% endfor %}
     </ul>
 
-    <li>世界 / World </li>
+    <li>World / 世界</li>
     <ul>
-      {% for item in loop.world_stat %}
+      {% for item in link.news_en %}
       <li> <a href="{{item.href}}">{{item.text}}</a></li>
       {% endfor %}
     </ul>
   </ul>
 
-
-  <h6>解析 / Analysis</h6>
-  <ul>
-    {% for item in loop.analysis %}
-    <li> <a href="{{item.href}}">{{item.text}}</a></li>
-    {% endfor %}
-  </ul>
 
   <span class="anchor"></span>
   <span class="anchor"></span>

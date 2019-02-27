@@ -4,6 +4,16 @@
 {% block header scoped %}
 <!-- header: designed by TM -->
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-45695282-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-45695282-2');
+  </script>
+
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
   <title>FrontPage - TM</title>
   <script type="text/javascript" src="{{info.base}}/js/common.js"></script>

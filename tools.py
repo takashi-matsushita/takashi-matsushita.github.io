@@ -253,8 +253,8 @@ def getConferences(loop=None):
     'name': 'Physical Society of Japan',
     'venue': 'Hiroshima University',
     'title': "Recent results from HERA/ZEUS",
-    'slides': "",
-    'poster': "https://drive.google.com/open?id=0B9VL39aSWUqiQnNTc3hBdV91WEE",
+    'slides': "https://drive.google.com/open?id=0B9VL39aSWUqiQnNTc3hBdV91WEE",
+    'poster': None,
     'proceedings': "",
   })
 
